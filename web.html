@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ケーキショップ</title>
+<meta name="description"  content="ケーキショップのサンプルページです">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--===レイアウトを制御する独自のCSSを読み込み===-->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="topInner">
+      <div class="logo"><h1>LOGO</h1></div>
+      <div class="top-btn">
+        <button type="button" onclick="location.href='https://www.nobby-tech.co.jp'">アクセス</button>
+        <button type="button" onclick="location.href='https://x-rite.co.jp'">お問い合わせ</button>
+      </div>
+    </div>
+    <div class="gNavi">
+      <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu5</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mainImg">
+    <img src="images/main-img.png" alt="ケーキショップ" class="img-fluid">
+  </div>
+</header>
+  
+<main>
+  <section id="str">
+    <div class="container strInner">
+      <div class="str-box">
+        <img src="images/bnr-shop.jpg" alt="オンラインショップ" class="img-fluid">
+        <h2>TITLE01</h2>
+        <p>タイトル01について</p>
+      </div>
+      <div class="str-box">
+        <img src="images/bnr-food.jpg" alt="ケーキ一覧" class="img-fluid">
+        <h2>TITLE02</h2>
+        <p>タイトル02について</p>
+      </div>
+    </div>
+  </section>
+  <section id="camp">
+    <div class="container">
+      <h2>TITLE <br>タイトル</h2>
+    </div>
+    <div class="container campInner">
+      <div class="camp-box">
+        <h3>TITLE</h3>
+        <p>ここに説明を書きます。ここに説明を書きます。</p>
+        <button class="wid-70"><a href="#">Read More</a></button>
+      </div>
+      <div class="camp-box">
+        <h3>TITLE</h3>
+        <p>ここに説明を書きます。ここに説明を書きます。</p>
+        <button class="wid-70"><a href="#">Read More</a></button>
+      </div>
+    </div>
+  </section>
+  <section id="news">
+    <div class="container">
+      <h2>NEWS <br>新着情報</h2>
+    </div>
+    <div class="container newsInner">
+      <dl>
+          <dt><span class="newsFont">20XX.01.01</span></dt>
+          <dd>ここにお知らせ文書を書きます。ここにお知らせ文書を書きます。ここにお知らせ文書を書きます。</dd>
+          <dt><span class="newsFont">20XX.01.01</span></dt>
+          <dd>ここにお知らせ文書を書きます。ここにお知らせ文書を書きます。ここにお知らせ文書を書きます。</dd>
+          <dt><span class="newsFont">20XX.01.01</span></dt>
+          <dd>ここにお知らせ文書を書きます。ここにお知らせ文書を書きます。ここにお知らせ文書を書きます。</dd>
+        </dl>
+    </div> </section>
+  <section id="gal">
+    <div class="container">
+      <h2>GALLERY</h2>
+    </div>
+    <div class="galInner">
+      <div><img src="images/pr-image01.jpg" alt="ケーキ画像サンプル"></div>
+      <div><img src="images/pr-image02.jpg" alt="ケーキ画像サンプル"></div>
+      <div><img src="images/pr-image03.jpg" alt="ケーキ画像サンプル"></div>
+      <div><img src="images/pr-image04.png" alt="ケーキ画像サンプル"></div>
+    </div>
+  </section>
+  <section id="mem">
+    <div class="pink">
+    <div class="container">
+      <h2>MEMBERS <br>会員登録</h2>
+    </div>
+    <div class="memsInner">
+      <form action="#" method="get" id="form1">
+        <table>
+          <tr>
+            <th>お名前（必須）</th>
+            <td><input type="text" name="name" value=""></td>
+          </tr>
+          <tr>
+            <th>ふりがな（必須）</th>
+            <td><input type="text" name="furi" value=""></td>
+          </tr>
+          <tr>
+            <th>性別（必須）</th>
+            <td>
+              <span class="mgr"><label for="male"><input type="radio" name="gender" value="1" id="male" checked>男性</label></span>
+              <label for="female"><input type="radio" name="gender" value="2" id="female">女性</label>
+            </td>
+          </tr>
+          <tr>
+            <th>電話番号（必須）</th>
+            <td><input type="tel" name="tel" value=""></td>
+          </tr>
+          <tr>
+            <th>メールアドレス（必須）</th>
+            <td><input type="mail" name="mail" value=""></td>
+          </tr>
+          <tr>
+            <th>ご希望のパスワード（必須）</th>
+            <td><input type="password" name="pass" value=""></td>
+          </tr>
+          <tr class="btn">
+            <td colspan="2"><a href="#"><input type="button" name="button" value="確認画面へ" class="btn-submit"></a></td>
+          </tr>
+        </table>
+        </form>
+    </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footerInner">
+    <p>〇〇〇〇 &copy; 20xx copyRight All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,307 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+body {
+  min-height: 1000px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* トップ */
+.topInner {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+.logo {
+  justify-content: flex-start;
+}
+.top-btn {
+  justify-content: flex-end;
+}
+.top-btn button {
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  background: #a9a9a9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.gNavi ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gNavi ul li {
+  list-style-type: none;
+  padding: 15px 45px;
+  width: 20%;
+  cursor: pointer;
+}
+.gNavi ul li a {
+  text-decoration: none;
+  color: #5c5c5c;
+  font-weight: 600;
+}
+
+/* 強みについて */
+.strInner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.str-box {
+  width: 50%;
+  padding: 5rem;
+  text-align: center;
+}
+.str-box h2 {
+  color: #5c5c5c;
+  font-family: "montserrat", sans-serif;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+.str-box p {
+  color: #5c5c5c;
+  font-family: "montserrat", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+}
+@media screen and (max-width:576px) {
+  .str-box {
+    width: 100%;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+/* キャンペーン */
+#camp {
+  background: url("images/camp-img.jpg") no-repeat;
+}
+#camp h2 {
+  color: #fff;
+  font-family: "montserrat", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  padding: 2rem;
+}
+.campInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.camp-box {
+  position: relative;
+  width: 45%;
+  background-color: white;
+  color: #333;
+  padding: 3rem;
+  margin-right: 15px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-flow: column;
+}
+.camp-box h3 {
+  color: #333;
+  font-family: "montserrat", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: .2rem;
+  line-height: 1.8;
+  text-align: center;
+  padding: 1rem;
+}
+.camp-box p {
+  color: #333;
+  font-family: "montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
+}
+.campInner button {
+  position: relative;
+  padding: 1rem;
+  margin: 1.5rem;
+  background: white;
+  border: 1px #333 solid;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.campInner button:hover {
+  background: #a9a9a9;
+}
+.campInner button a {
+  text-decoration: none;
+  color: #333;
+}
+.campInner button:hover a {
+  color: #fff;
+}
+
+/* ニュース */
+#news h2 {
+  color: #5c5c5c;
+  font-family: "montserrat", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  padding: 2.5rem;
+}
+.newsInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsInner dd {
+  padding-bottom: 25px;
+}
+.newsInner dt, 
+.newsInner dd {
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+.newsFont {
+  font-weight: 600;
+}
+
+/* ギャラリー */
+#gal h2 {
+  color: #5c5c5c;
+  font-family: "montserrat", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  padding: 2.5rem;
+}
+.galInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galInner img {
+  margin-right: 2px;
+}
+
+/* 会員登録フォーム */
+#mem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mem h2 {
+  color: #5c5c5c;
+  font-family: "montserrat", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  text-align: center;
+  padding: 2.5rem;
+}
+.pink {
+  width: 70%;
+  background-color: #fadde6;
+  padding: 40px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.memsInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.memsInner th, .memsInner td {
+  font-family: "montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: #5c5c5c;
+  font-weight: 600;
+}
+.memsInner th {
+  text-align: left;
+}
+.memsInner tr {
+  line-height: 35px;
+}
+#form1 [type="text"], #form1 [type="password"],
+#form1 [type="mail"], #form1 [type="tel"] {
+  width: 350px;
+  padding: 4px;
+}
+.btn {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.btn-submit {
+  background-color: #e9658d;
+  padding: .8rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 25px;
+}
+.btn-submit:hover {
+  background-color: white;
+  color: #e9658d;
+  border: #e9658d 1px solid;
+  cursor: pointer;
+}
+
+/* フッター */
+footer {
+  margin: 0 auto;
+}
+.footerInner {
+  background-color: #333;
+  padding: 25px;
+  text-align: center;
+}
+.footerInner p {
+  color: white;
+}
