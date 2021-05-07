@@ -1,6 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*============================*/
+/* カラーチャート 
+/*============================
+  #fadde6 light pink
+  #e9658d dark pink
+  #5c5c5c dark gray 
+/*============================*/ 
+
 * {
   margin: 0;
   padding: 0;
@@ -20,37 +28,32 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
-
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
-
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
-
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
 }
-
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
 
-/* トップ */
+/* ヘッダー */
 .topInner {
   display: flex;
   justify-content: space-around;
@@ -70,6 +73,8 @@ html {
   border: none;
   border-radius: 5px;
 }
+
+/* ナビゲーション */
 .gNavi ul {
   display: flex;
   justify-content: space-between;
@@ -85,6 +90,75 @@ html {
   text-decoration: none;
   color: #5c5c5c;
   font-weight: 600;
+} 
+button {
+  border: none;
+  background: none;
+}
+
+/* ハンバーガーメニュー */
+.btn-humbergar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  z-index: 2;
+}
+.mainmenu-sm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffc0cb;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  transform: translateX(-400px);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.openmenu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.openmenu ul li {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.openmenu a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+}
+.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+@media screen and (max-width: 786px) {
+  .gNavi {
+    display: none;
+  }
+  .top-btn button {
+    display: none;
+  }
+  .btn-humbergar {
+    display: block;
+  }
+  .btn-humbergar button {
+    margin-right: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .topInner {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: flex-start;
+  }
 }
 
 /* 強みについて */
@@ -110,14 +184,18 @@ html {
   font-size: 1rem;
   letter-spacing: .2rem;
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width:786px) {
+  .strInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .str-box {
     width: 100%;
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
 }
 
@@ -168,7 +246,7 @@ html {
 .campInner button {
   position: relative;
   padding: 1rem;
-  margin: 1.5rem;
+  margin: 1.5rem auto;
   background: white;
   border: 1px #333 solid;
   border-radius: 3px;
@@ -183,6 +261,27 @@ html {
 }
 .campInner button:hover a {
   color: #fff;
+}
+
+@media screen and (max-width:786px) {
+  .campInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .camp-box {
+    width: 100%;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #camp {
+    background-size: cover;
+  }
+  .camp-box button {
+    margin: 1.5rem auto 0;
+  }
 }
 
 /* ニュース */
@@ -230,6 +329,14 @@ html {
   margin-right: 2px;
 }
 
+@media screen and (max-width:786px) {
+  .galInner {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}
+
 /* 会員登録フォーム */
 #mem {
   display: flex;
@@ -268,10 +375,18 @@ html {
 .memsInner tr {
   line-height: 35px;
 }
+.mgr {
+  margin-right: 3rem;
+}
+#male,
+#female {
+  margin-right: 5px;
+}
 #form1 [type="text"], #form1 [type="password"],
 #form1 [type="mail"], #form1 [type="tel"] {
   width: 350px;
   padding: 4px;
+  margin: 0.5rem auto;
 }
 .btn {
   width: 500px;
@@ -291,6 +406,31 @@ html {
   color: #e9658d;
   border: #e9658d 1px solid;
   cursor: pointer;
+}
+
+@media screen and (max-width:786px) {
+  .pink {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .memsInner th,
+  .memsInner td {
+    display: block;
+    width: 100%;
+  }
+  .btn-submit {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .btn-submit:hover {
+    background: white;
+    border: 1px solid #e9658d;
+    color: #e9658d;
+  }
+  #form1 [type="text"], #form1 [type="password"],
+  #form1 [type="mail"], #form1 [type="tel"] {
+    padding: 10px;
+  }
 }
 
 /* フッター */
